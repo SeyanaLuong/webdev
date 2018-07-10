@@ -1,21 +1,19 @@
 body {
   background: #f4f4f4;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Navbar */
 .navbar {
   min-height: 33px !important;
   margin-bottom: 0;
-  
 }
-
 .navbar-nav > li > a,
 .navbar-brand {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
   height: 33px;
 }
-
 .navbar {
   background-color: #eea1a1;
 }
@@ -74,7 +72,6 @@ body {
 .navbar .navbar-link:hover {
   color: #000000;
 }
-
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
   color: #ffffff;
 }
@@ -106,11 +103,6 @@ body {
   padding-top: 15px;
 }
 
-#header .glyph-icon svg {
-  width: 32px;
-  height: 32px;
-}
-
 /* Breadcrumb */
 .breadcrumb {
   background: #ccc;
@@ -121,27 +113,13 @@ body {
   color: #333;
 }
 
-/* Main */
-#main .list-group svg {
-  width: 16px;
-  height: 16px;
-}
-
-#main .card-body svg {
-  width: 32px;
-  height: 32px;
-}
-
 /* Progress-bar */
 .progress-bar {
   background: #333;
   color: #fff;
 }
 
-.dash-box {
-  text-align: center; 
-}
-
+/* Footer */
 #footer {
   background: #333;
   color: #fff;
@@ -149,10 +127,6 @@ body {
   padding: 30px;
   margin-top: 30px;
 }
-
-
-
-
 
 @media (max-width: 575px) {
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
@@ -165,6 +139,9 @@ body {
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
     color: #000000;
     background-color: #e5dcc1;
+  }
+  #header h1 {
+    text-align: center;
   }
 }
 
@@ -179,11 +156,6 @@ body {
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
     color: #000000;
     background-color: #e5dcc1;
-  }
-
-  .navbar-toggler-icon {
-    
-    color: #fff;
   }
 }
 
