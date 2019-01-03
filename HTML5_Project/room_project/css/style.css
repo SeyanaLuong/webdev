@@ -5,7 +5,7 @@ body {
     color: #000000;
     font-size: 16px;
     font-weight: 700;
-    background-image: url(/room_project/assets/bg2.jpg);
+    background-image: url(../assets/bg2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
