@@ -1,5 +1,6 @@
 body {
-  background-image: url(/HTML5_Project/bootstrap_Game/resources/bg.jpg);
+  background-image: url("/bootstrap_Game/resources/bg.jpg");
+  background-color: #8d8181;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,6 +11,10 @@ body {
 
 .hide {
   display: none;
+}
+
+.card-header:first-child {
+  border-radius: 0;
 }
 
 .card-subtitle {
@@ -25,10 +30,18 @@ body {
   font-size: 15px;
 }
 
+.list-group-item {
+  background-color: #000;
+  color: #fff;
+}
+
 .card {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 0;
+  background-color: #000;
+  color: #fff;
+  border: 0;
 }
 
 .card-header {
@@ -39,6 +52,10 @@ body {
 
 .card-img-top {
   border-radius: 0;
+}
+
+.card-body .btn {
+  padding: 0;
 }
 
 @media (max-width: 575.98px) {
