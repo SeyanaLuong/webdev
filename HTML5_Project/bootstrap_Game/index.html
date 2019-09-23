@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap"
+      rel="stylesheet"
+    />
+    <title>The Game Library</title>
+  </head>
+  <body>
+  
+    <nav class="navbar fixed-top navbar-dark bg-dark d-flex justify-content-center">
+      <span class="navbar-brand mb-0 h1 ">The Game Library</span>
+      <div class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          id="gameTitle"
+          placeholder="/search"
+          aria-label="Search"
+        />
+        <button
+          class="btn btn-outline-warning my-2 my-sm-0"
+          type="submit"
+          id="submitBtn"
+          onclick="getGameData()"
+        >
+          Search
+        </button>
+      </div>
+    </nav>
+  
+
+    <div class="container">
+      <div class="card hide" id="gameDetails">
+        <div class="card-header text-center" id="gameName">
+          Featured
+        </div>
+        <img src="" alt="" class="card-img-top" id="gameIMG" />
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-6">
+              <h5 class="card-subtitle" id="gameGenre">
+                Special title treatment
+              </h5>
+            </div>
+            <div class="col-sm-6">
+              <h5 class="card-subtitle" id="gamePlatform">
+                Special title treatment
+              </h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="gameMetacritic">Cras justo odio</li>
+          </ul>
+          <p class="card-text" id="gameDescription">
+            With supporting text below as a natural lead-in to additional
+            content.
+          </p>
+        </div>
+        <ul class="list-group list-group-flush list-sm">
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-sm-6" id="ESRB">Lorem.</div>
+              <div class="col-sm-6" id="gameReleaseDate"></div>
+            </div>
+          </li>
+          <li class="list-group-item" id="gameDeveloper">Lorem ipsum dolor sit amet.</li>
+          <li class="list-group-item" id="gamePublisher">Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="btn btn-primary" id="gameWebsite">Lorem.</a>
+          <a href="#" class="btn btn-primary" id="gameReddit">Lorem, ipsum.</a>
+        </div>
+
+        <div class="card-footer text-muted text-center">
+          Data provided by
+          <a href="https://rawg.io/apidocs" target="_blank">RAWG.IO</a>
+          API
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/test.js"></script>
+  </body>
+</html>

@@ -51,9 +51,9 @@ main {
 }
 
 #landing-image {
-    background: url(https://source.unsplash.com/TyIQPn00XQY/);
+    background: url(/HTML5_Project/mobile_Project/resources/bg.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     height: 50vh;
     flex: 0 1 60vw;
