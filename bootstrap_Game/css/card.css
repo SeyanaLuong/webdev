@@ -5,9 +5,15 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #000;
+  color: #fff;
   background-color: #222020;
+  background-image: url(/bootstrap_Game/resources/bg2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 #root {
@@ -41,33 +47,89 @@ p {
   flex-wrap: wrap;
 }
 
+a {
+  color: #fff;
+}
+a:hover {
+  color: #5aacf8;
+}
 .card {
   margin: 1rem;
-  background: #000;
+  background: rgb(0, 0, 0);
   color: #e4e6e0;
   box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.2s linear;
-  opacity: 0.75;
+  opacity: 0.95;
+  cursor: pointer;
 }
 
 .card:hover {
-  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 8px 45px rgb(63, 6, 6);
   transform: translate3D(0, -2px, 0);
   opacity: 1;
 }
 
-.img-gallery {
-  display: block;
-  margin: 1rem auto;
-  max-width: 100%;
+.img-gallery img {
+  border-radius: 5px;
 }
 
 .card-img-top {
   border-radius: 0;
 }
 
+.card-body {
+  padding-top: 0;
+}
+
+.card-body .card-text:last-of-type {
+  font-size: 11px;
+}
+
+.bottom .h5 {
+  font-size: 11px;
+  margin: 0;
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+.btn:disabled {
+  opacity: 0.2;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-6 {
+  padding: 0 5px;
+}
+
+.bottom .btn {
+  padding: 5px 15px;
+}
+
+.bottom .navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar:last-of-type {
+  padding: 0;
+  padding-top: 5px;
+}
+
+.col-10 {
+  padding-right: 5px;
+}
+
+.col-2 {
+  padding-left: 0;
+}
 @media screen and (min-width: 600px) {
   .card {
     flex: 1 1 calc(50% - 2rem);
@@ -77,5 +139,30 @@ p {
 @media screen and (min-width: 900px) {
   .card {
     flex: 1 1 calc(33% - 2rem);
+  }
+}
+
+@media (max-width: 575.98px) {
+  body {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    flex-flow: column;
+    padding: 0;
+    padding-bottom: 5px;
+  }
+  .navbar-brand {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .card {
+    margin: auto;
+    opacity: 0.95;
+  }
+
+  .col-6 {
+    padding: 0 25px;
   }
 }

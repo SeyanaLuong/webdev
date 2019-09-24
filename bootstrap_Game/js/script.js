@@ -1,22 +1,20 @@
-var api = "https://api.rawg.io/api/games/";
-var request = new XMLHttpRequest();
+const api = "https://api.rawg.io/api/games/";
+const request = new XMLHttpRequest();
 
-var input = document.getElementById("gameTitle");
-input.addEventListener("keyup", function(e) {
-  if (e.keyCode === 13) {
-    e.preventDefault();
-    document.getElementById("submitBtn").click();
-  }
-});
+var getUrl = window.location.href;
+var url = new URL(getUrl);
+var gameTitle = url.searchParams.get("q");
+
+var page = url.searchParams.get("p");
+var page_size = url.searchParams.get("s");
+var search = url.searchParams.get("g");
+getGameData();
+
+function backButton() {
+  window.location = `index.html?p=${page}&s=${page_size}&g=${search}`;
+}
 
 function getGameData() {
-  var gameTitle = document.getElementById("gameTitle").value;
-  var gameTitle = gameTitle
-    .split(" ")
-    .join("")
-    .split("'")
-    .join("")
-    .toLowerCase();
   request.open("GET", api + gameTitle, true);
   request.onload = function() {
     var data = JSON.parse(this.response);
@@ -67,11 +65,12 @@ function getReleaseDate(data) {
   if (data.released) {
     document.getElementById("gameReleaseDate").innerHTML =
       "Release Date: " + data.released;
-      document.getElementById("gameReleaseDate").style = "display: flex;";
+    document.getElementById("gameReleaseDate").style = "display: flex;";
   } else {
     document.getElementById("gameReleaseDate").style = "display: none;";
   }
 }
+
 function getGameDescription(data) {
   if (data.description) {
     document.getElementById("gameDescription").innerHTML = data.description;
@@ -94,7 +93,7 @@ function getESRB(data) {
   if (data.esrb_rating) {
     document.getElementById("ESRB").innerHTML =
       "ESRB Rating: " + data.esrb_rating.name;
-      document.getElementById("ESRB").style = "display: flex;";
+    document.getElementById("ESRB").style = "display: flex;";
   } else {
     document.getElementById("ESRB").style = "display: none;";
   }
@@ -109,7 +108,7 @@ function getIMG(data) {
 }
 
 function getGenre(data) {
-  if(data.genres) {
+  if (data.genres) {
     var genreConcat = "";
     data.genres.forEach(x => {
       genreConcat = x.name + ", " + genreConcat;
@@ -120,7 +119,6 @@ function getGenre(data) {
   } else {
     document.getElementById("gameGenre").style = "display: none;";
   }
-  
 }
 
 function getMetacritic(data) {
@@ -143,7 +141,7 @@ function getMetacritic(data) {
 }
 
 function getPlatforms(data) {
-  if(data.platforms){
+  if (data.platforms) {
     var platformConcat = "";
     data.platforms.forEach(x => {
       platformConcat = x.platform.name + ", " + platformConcat;
@@ -151,15 +149,14 @@ function getPlatforms(data) {
     platformConcat = platformConcat.substring(0, platformConcat.length - 2);
     document.getElementById("gamePlatform").innerHTML =
       "Platforms: " + platformConcat;
-      document.getElementById("gamePlatform").style = "display: flex;";
+    document.getElementById("gamePlatform").style = "display: flex;";
   } else {
     document.getElementById("gamePlatform").style = "display: none;";
   }
-  
 }
 
 function getDeveloper(data) {
-  if(data.developers) {
+  if (data.developers) {
     var devConcat = "";
     data.developers.forEach(x => {
       devConcat = x.name + ", " + devConcat;
@@ -167,15 +164,14 @@ function getDeveloper(data) {
     devConcat = devConcat.substring(0, devConcat.length - 2);
     document.getElementById("gameDeveloper").innerHTML =
       "Developer: " + devConcat;
-      document.getElementById("gameDeveloper").style = "display: flex;";
+    document.getElementById("gameDeveloper").style = "display: flex;";
   } else {
     document.getElementById("gameDeveloper").style = "display: none;";
   }
-  
 }
 
 function getPublisher(data) {
-  if(data.publishers) {
+  if (data.publishers) {
     var pubConcat = "";
     data.publishers.forEach(x => {
       pubConcat = x.name + ", " + pubConcat;
@@ -183,9 +179,8 @@ function getPublisher(data) {
     pubConcat = pubConcat.substring(0, pubConcat.length - 2);
     document.getElementById("gamePublisher").innerHTML =
       "Publisher: " + pubConcat;
-      document.getElementById("gamePublisher").style = "display: flex;";
+    document.getElementById("gamePublisher").style = "display: flex;";
   } else {
     document.getElementById("gamePublisher").style = "display: none;";
   }
-
 }
