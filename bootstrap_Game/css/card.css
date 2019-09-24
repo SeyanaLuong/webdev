@@ -14,12 +14,12 @@ body {
   background-position: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  font-family: "Be Vietnam", sans-serif;
 }
 
 #root {
   max-width: 1200px;
   margin: 0 auto;
-  font-family: "Be Vietnam", sans-serif;
 }
 
 h5 {
@@ -93,7 +93,7 @@ a:hover {
 }
 
 .navbar-brand {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .btn:disabled {

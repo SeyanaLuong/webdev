@@ -6,7 +6,7 @@ body {
   background-size: cover;
   background-position: center;
   font-family: "Be Vietnam", sans-serif;
-  padding-top: 60px;
+  padding-top: 70px;
 }
 
 .hide {
@@ -38,10 +38,13 @@ body {
 .card {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-radius: 0;
-  background-color: #000;
+  background: rgb(0, 0, 0);
   color: #e4e6e0;
-  border: 0;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  opacity: 0.98;
 }
 
 .card-header {
@@ -108,6 +111,5 @@ body {
   .navbar-brand {
     padding: 0;  
     font-size: 25px;
-    /* padding-bottom: 10px; */
   }
 }

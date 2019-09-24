@@ -101,7 +101,7 @@ function getGameCards(pagesNo, page_size, search) {
 
         card.onclick = function moreInfo() {
           window.location = `gameInfo.html?q=${parseName}&p=${pages ||
-            pagesNo}&s=${pageSize || page_size}&g=${gameName || search}`;
+            pagesNo}&s=${pageSize || page_size}&g=${gameName || search || ""}`;
         };
 
         container.appendChild(card);
