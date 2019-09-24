@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+  background-color: #222020;
+  padding-top: 60px;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+h5 {
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  background-color: orange;
+  margin: 0 0 2rem 0;
+  font-size: 1.25rem;
+  color: white;
+}
+
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+p {
+  padding: 2px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  background: #000;
+  color: #e4e6e0;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  opacity: 0.75;
+}
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+  transform: translate3D(0, -2px, 0);
+  opacity: 1;
+}
+
+.img-gallery {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}

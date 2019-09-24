@@ -1,6 +1,6 @@
 body {
   background-image: url("/bootstrap_Game/resources/bg.jpg");
-  background-color: #8d8181;
+  background-color: #222020;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +32,7 @@ body {
 
 .list-group-item {
   background-color: #000;
-  color: #fff;
+  color: #e4e6e0;;
 }
 
 .card {
@@ -40,7 +40,7 @@ body {
   margin-bottom: 1rem;
   border-radius: 0;
   background-color: #000;
-  color: #fff;
+  color: #e4e6e0;
   border: 0;
 }
 
