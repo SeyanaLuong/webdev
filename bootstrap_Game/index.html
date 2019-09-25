@@ -1,92 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>The Game Library</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/card.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/7b196e6149.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <nav
-      class="navbar fixed-top navbar-dark bg-dark d-flex justify-content-center"
-    >
-      <a class="navbar-brand mb-0 h1 " href="index.html">The Game Library</a>
-      <div class="row">
-        <div class="col-10">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            id="gameTitle"
-            placeholder="Search"
-            aria-label="Search"
-          />
-        </div>
-        <div class="col-2">
-          <button
-            class="btn btn-outline-warning"
-            type="submit"
-            id="submitBtn"
-            onclick="getGameCards()"
-          >
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
 
-    <div id="root"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>The Game Library</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/card.css" />
+  <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/7b196e6149.js" crossorigin="anonymous"></script>
+</head>
 
-    <nav
-      class="bottom navbar fixed-bottom navbar-dark bg-dark d-flex justify-content-center"
-    >
-      <div class="row">
-        <div class="col-6">
-          <button
-            class="btn btn-outline-warning"
-            type="submit"
-            id="prevBtn"
-            onclick="toPrevPage()"
-            disabled
-          >
-            <i class="fas fa-angle-left"></i>
-          </button>
-        </div>
-        <div class="col-6">
-          <button
-            class="btn btn-outline-warning"
-            type="submit"
-            id="nextBtn"
-            onclick="toNextPage()"
-            disabled
-          >
-            <i class="fas fa-angle-right"></i>
-          </button>
-        </div>
+<body>
+  <p class="rawg">Data Provided By <a href="https://rawg.io/apidocs" target="_blank"
+      rel="noopener noreferrer">RAWG.IO</a></p>
+  <nav class="navbar fixed-top navbar-dark bg-dark d-flex justify-content-center">
+    <a class="navbar-brand mb-0 h1 " href="index.html">The Game Library</a>
+    <div class="row">
+      <div class="col-10">
+        <input class="form-control mr-sm-2" type="search" id="gameTitle" placeholder="Search" aria-label="Search" />
       </div>
-      <div class="row">
-        <div class="col">
-          <div class="navbar-brand">
-            <p class="h5">Data Provided By <a href="#">RAWG.IO</a></p>
-          </div>
-        </div>
+      <div class="col-2">
+        <button class="btn btn-outline-warning" type="submit" id="submitBtn" onclick="getGameCards()">
+          <i class="fas fa-search"></i>
+        </button>
       </div>
-    </nav>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/card.js"></script>
-  </body>
+    </div>
+  </nav>
+
+
+  <div class="nav-btns">
+    <div class="row">
+      <div class="col-6"><button class="btn btn-outline-warning" type="submit" id="prevBtn" onclick="toPrevPage()"
+          disabled>
+          <i class="fas fa-angle-left"></i>
+        </button></div>
+      <div class="col-6"><button class="btn btn-outline-warning" type="submit" id="nextBtn" onclick="toNextPage()"
+          disabled>
+          <i class="fas fa-angle-right"></i>
+        </button></div>
+    </div>
+  </div>
+
+  <div id="root"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/card.js"></script>
+  <script src="js/game.js"></script>
+</body>
+
 </html>

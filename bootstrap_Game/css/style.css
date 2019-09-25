@@ -1,16 +1,28 @@
 body {
-  background-image: url(/bootstrap_Game/resources/bg.jpg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../resources/bg.jpg");
+  background-blend-mode: overlay;
   background-color: #222020;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   font-family: "Be Vietnam", sans-serif;
-  padding-top: 70px;
+  padding-top: 55px;
+  height: 100%;
+  width: 100%;
 }
 
 .hide {
   display: none;
+}
+
+.text-muted {
+  color: #e4e6e0 !important;
 }
 
 .card-header:first-child {
@@ -26,19 +38,28 @@ body {
   font-size: 20px;
 }
 
+.card-body {
+  padding: 10px 1.25rem;
+}
+
+.card-footer {
+  border: 0;
+}
+
 .list-sm {
   font-size: 16px;
 }
 
 .list-group-item {
-  background-color: #000;
-  color: #e4e6e0;;
+  background: #151515;
+  color: #e4e6e0;
+  border: 0;
 }
 
 .card {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background: rgb(0, 0, 0);
+  background: #151515;
   color: #e4e6e0;
   box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
@@ -65,6 +86,11 @@ body {
   margin-right: 10px;
 }
 
+.navbar {
+  padding: 0;
+  opacity: 0.95;
+}
+
 .navbar-brand {
   padding-bottom: 5px;
   font-size: 30px;
@@ -72,7 +98,7 @@ body {
 
 @media (max-width: 575.98px) {
   body {
-    padding-top: 70px;
+    padding-top: 40px;
   }
 
   .card-header {
@@ -88,18 +114,27 @@ body {
     margin-bottom: 5px;
   }
 
+  .btn {
+    font-size: 12px;
+  }
+
   .list-sm {
     font-size: 13px;
   }
 
   .list-group-item {
     padding-top: 0;
-    padding-bottom: 0; 
+    padding-bottom: 0;
+  }
+
+  .btn {
+    margin: 5px 5px !important;
   }
 
   .navbar {
     display: block !important;
     text-align: center;
+    padding: 0;
   }
 
   .form-inline {
@@ -109,7 +144,7 @@ body {
   }
 
   .navbar-brand {
-    padding: 0;  
-    font-size: 25px;
+    padding: 0;
+    font-size: 20px;
   }
 }

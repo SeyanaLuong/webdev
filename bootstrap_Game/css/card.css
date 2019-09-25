@@ -5,15 +5,19 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #fff;
+  color: #e4e6e0;
   background-color: #222020;
-  background-image: url(/bootstrap_Game/resources/bg2.jpg);
+  background-image: url("../resources/bg2.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 50px;
+  padding-bottom: 10px;
   font-family: "Be Vietnam", sans-serif;
 }
 
@@ -22,13 +26,41 @@ body {
   margin: 0 auto;
 }
 
+.nav-btns .btn {
+  padding: 3px 13px;
+  background-color: #343a40;
+  
+}
+
+.btn:hover {
+  background-color: #ffc107;
+}
+
+.nav-btns {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 15px;
+  padding-bottom: 2px;
+}
+
+.rawg {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: fixed;
+  font-size: 12px;
+  bottom: 0;
+  left: 0;
+}
+
 h5 {
   text-align: center;
   padding: 1.5rem 2.5rem;
   background-color: orange;
   margin: 0 0 2rem 0;
-  font-size: 1.25rem;
-  color: white;
+  font-size: 1.4rem;
+  color: #fff;
 }
 
 img {
@@ -50,12 +82,14 @@ p {
 a {
   color: #fff;
 }
+
 a:hover {
   color: #5aacf8;
 }
+
 .card {
   margin: 1rem;
-  background: rgb(0, 0, 0);
+  background: #151515;
   color: #e4e6e0;
   box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
@@ -87,50 +121,36 @@ a:hover {
   font-size: 11px;
 }
 
-.bottom .h5 {
-  font-size: 11px;
-  margin: 0;
+.navbar {
+  padding: 5px 0;
+  opacity: 0.95;
 }
 
 .navbar-brand {
   font-size: 30px;
+  padding: 0;
+  padding-right: 5px;
 }
 
 .btn:disabled {
   opacity: 0.2;
 }
 
-.bottom {
-  display: flex;
-  flex-direction: column;
+.col-2 {
+  padding-left: 2px;
+  padding-right: 0px;
 }
 
 .col-6 {
-  padding: 0 5px;
-}
-
-.bottom .btn {
-  padding: 5px 15px;
-}
-
-.bottom .navbar-brand {
-  margin: 0;
-  padding: 0;
-}
-
-.navbar:last-of-type {
-  padding: 0;
-  padding-top: 5px;
+  padding: 0 2px;
 }
 
 .col-10 {
-  padding-right: 5px;
-}
-
-.col-2 {
+  padding-right: 0;
   padding-left: 0;
 }
-@media screen and (min-width: 600px) {
+
+@media screen and (min-width: 604.98px) {
   .card {
     flex: 1 1 calc(50% - 2rem);
   }
@@ -142,27 +162,40 @@ a:hover {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 604.98px) {
   body {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
+    background-color: #797979;
   }
-  .navbar {
-    flex-flow: column;
-    padding: 0;
-    padding-bottom: 5px;
+
+  h5 {
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    background-color: orange;
+    margin: 0 0 2rem 0;
+    font-size: 1.25rem;
+    color: #fff;
   }
+
   .navbar-brand {
-    font-size: 14px;
-    padding: 0;
+    font-size: 20px;
   }
 
   .card {
-    margin: auto;
-    opacity: 0.95;
+    opacity: 1;
   }
 
-  .col-6 {
-    padding: 0 25px;
+  .card-body {
+    font-size: 11px;
+  }
+
+  .card:hover {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    padding-top: 70px;
   }
 }
