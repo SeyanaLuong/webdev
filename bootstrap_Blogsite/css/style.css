@@ -188,7 +188,7 @@ figure {
 }
 
 #fixed {
-  background-image: url(../assets/pexels-photo-1089194.jpeg);
+  background-image: url("../assets/pexels-photo-1089194.jpeg");
   position: fixed;
   display: block;
   top: 0;

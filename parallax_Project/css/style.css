@@ -22,22 +22,22 @@ html {
 }
 
 .pimg1 {
-  background-image: url(../img/img1.jpeg);
+  background-image: url("../img/img1.jpeg");
   min-height: 100%;
 }
 
 .pimg2 {
-  background-image: url(../img/img2.jpeg);
+  background-image: url("../img/img2.jpeg");
   min-height: 400px;
 }
 
 .pimg3 {
-  background-image: url(../img/img3.jpeg);
+  background-image: url("../img/img3.jpeg");
   min-height: 400px;
 }
 
 .pimg4 {
-  background-image: url(../img/img4.jpeg);
+  background-image: url("../img/img4.jpeg");
   min-height: 100%;
 }
 

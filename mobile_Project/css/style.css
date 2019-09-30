@@ -51,7 +51,7 @@ main {
 }
 
 #landing-image {
-    background: url(/HTML5_Project/mobile_Project/resources/bg.jpg);
+    background: url("../resources/bg.jpg");
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
