@@ -1,33 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Webdev Projects</title>
     <style>
-        body {
-            font-size: 20px;
+        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+        * {
+            border-radius: none;
+            border: none;
         }
-    li {
-        margin-bottom: 10px;
-    }
+
+        body {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .card-deck {
+            justify-content: center;
+        }
+
+        .card-deck .card {
+            margin: 20px;
+            max-width: 590px;
+            min-width: 590px;
+            padding: 5px;
+            border: 1px solid rgb(204, 195, 195);
+        }
+
+        .card-body {
+            padding: 5px;
+        }
+
+        .card-body * {
+            margin: 1px;
+        }
+
+        @media (max-width: 567px) {
+            .card-deck .card {
+                min-width: 100px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div class="container">
-    <h1>Web Development Projects</h1>
-    <ul>
-        <li><a href="bootstrap_Blogsite/index.html">Dummy Blogsite</a> - Blogsite using bootstrap</li>
-        <li><a href="bootstrap_Cambodia/index.html">Cambodia</a> - Blog I created during my visit to Cambodia</li>
-        <li><a href="bootstrap_Project/">Bootstrap Cheat Sheet</a> - Bootstrap cheat sheet</li>
-        <li><a href="bootstrap_Website/">Dashboard</a> - Bootstrap dashboard</li>
-        <li><a href="fullscreen_Project/index.html">Fullscreen Landing Page</a> - Landing page</li>
-        <li><a href="mobile_Project/index.html">Mobile</a> - Photography site</li>
-        <li><a href="parallax_Project/index.html">Parallax</a> - Parallax Images</li>
-        <li><a href="room_Project/index.html">Room Project</a> - Sample personal site for my room</li>
-    </ul>
-</div>
+    <div class="container-fluid">
+        <h1>Web Development Projects</h1>
+        <div class="card-deck">
+            <div class="card">
+                <img src="resources/portfolio.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Portfolio</h5>
+                    <p class="card-text">My personal portfolio</p>
+                    <a class="btn btn-primary" href="https://seyanaluong.github.io/personal-site/">View</a>
+                    <a class="btn btn-success"
+                        href="https://github.com/SeyanaLuong/personal-site">Github Repo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/tgl.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Game Library</h5>
+                    <p class="card-text">Retrieves and displays video game data from RAWG.IO API</p>
+                    <a class="btn btn-primary" href="https://seyanaluong.github.io/the-game-library/">View</a>
+                    <a class="btn btn-success"
+                        href="https://github.com/SeyanaLuong/the-game-library">Github Repo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/blog.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dummy Blogsite</h5>
+                    <p class="card-text">Blog using bootstrap</p>
+                    <a class="btn btn-primary" href="bootstrap_Blogsite/index.html">View</a>
+                    <a class="btn btn-success"
+                        href="https://github.com/SeyanaLuong/webdev/tree/master/bootstrap_Blogsite">Github Repo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/cambodia_blog.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cambodia Blog</h5>
+                    <p class="card-text">Blog I created during my visit to Cambodia</p>
+                    <a class="btn btn-primary" href="bootstrap_Cambodia/index.html">View</a>
+                    <a class="btn btn-success"
+                        href="https://github.com/SeyanaLuong/webdev/tree/master/bootstrap_Cambodia">Github Repo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/cheatsheet.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bootstrap Cheat Sheet</h5>
+                    <p class="card-text">A bootstrap 4 cheat sheet</p>
+                    <a class="btn btn-primary" href="bootstrap_Project/index.html">View</a>
+                    <a class="btn btn-success"
+                        href="https://github.com/SeyanaLuong/webdev/tree/master/bootstrap_Project">Github Repo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/dashboard.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dashboard</h5>
+                    <p class="card-text">A bootstrap dashboard design</p>
+                    <a class="btn btn-primary" href="bootstrap_Website/index.html">View</a>
+                    <a class="btn btn-success"
+                        href="https://github.com/SeyanaLuong/webdev/tree/master/bootstrap_Website">Github Repo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/landing.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fullscreen Landing Page</h5>
+                    <p class="card-text">Landing page design</p>
+                    <a class="btn btn-primary" href="fullscreen_Project/index.html">View</a>
+                    <a class="btn btn-success"
+                        href="https://github.com/SeyanaLuong/webdev/tree/master/fullscreen_Project">Github Repo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/mobile.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mobile Photography Portfolio</h5>
+                    <p class="card-text">Photography design with built around media queries</p>
+                    <a class="btn btn-primary" href="mobile_Project/index.html">View</a>
+                    <a class="btn btn-success"
+                        href="https://github.com/SeyanaLuong/webdev/tree/master/mobile_Project">Github Repo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/parallax.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Parallax</h5>
+                    <p class="card-text">Parallax image design</p>
+                    <a class="btn btn-primary" href="parallax_Project/index.html">View</a>
+                    <a class="btn btn-success"
+                        href="https://github.com/SeyanaLuong/webdev/tree/master/parallax_Project">Github Repo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/room.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Room Project</h5>
+                    <p class="card-text">Sample site for my room</p>
+                    <a class="btn btn-primary" href="room_Project/index.html">View</a>
+                    <a class="btn btn-success"
+                        href="https://github.com/SeyanaLuong/webdev/tree/master/room_Project">Github Repo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
