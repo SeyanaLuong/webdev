@@ -6,7 +6,7 @@
         <li><p>bootstrap_Project - Created for testing bootstrap components.</p></li>
         <li><p>bootstrap_Website - Dummy site that simulates a web app dashboard.</p></li>
         <li><p>fullscreen_Project - Learning how to create a landing page.</p></li>
-        <li><p>mobile_Project - Understanding media queries.</p></li>
+        <li><p>mobile_Project - Photography site, understanding media queries.</p></li>
         <li><p>parallax_Project - Working with parallax images.</p></li>
-        <li><p>room_Project - Another dummy site for learning.</p></li>
+        <li><p>room_Project - Room project site.</p></li>
     </ul>
